@@ -1,0 +1,26 @@
+﻿clientVersion:
+  buildDate: "2025-09-09T19:44:50Z"
+  compiler: gc
+  gitCommit: 93248f9ae092f571eb870b7664c534bfc7d00f03
+  gitTreeState: clean
+  gitVersion: v1.34.1
+  goVersion: go1.24.6
+  major: "1"
+  minor: "34"
+  platform: windows/amd64
+kustomizeVersion: v5.7.1
+serverVersion:
+  buildDate: "2025-12-09T14:59:13Z"
+  compiler: gc
+  emulationMajor: "1"
+  emulationMinor: "34"
+  gitCommit: df11db1c0f08fab3c0baee1e5ce6efbf816af7f1
+  gitTreeState: clean
+  gitVersion: v1.34.3
+  goVersion: go1.24.11
+  major: "1"
+  minCompatibilityMajor: "1"
+  minCompatibilityMinor: "33"
+  minor: "34"
+  platform: linux/amd64
+

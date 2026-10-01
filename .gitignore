@@ -1,0 +1,25 @@
+﻿# Local credentials and generated secrets
+private/
+*.env
+observer.json
+kubeconfig*
+*.kubeconfig
+
+# Kubernetes secret material
+s3.json
+
+# Local editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Temporary files
+*.tmp
+*.log
