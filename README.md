@@ -22,9 +22,9 @@ The completed Task 1 demonstrates:
 
 Cloning this repository gives you the manifests, scripts, and evidence, but it does **not** copy the first student's local Docker Desktop Kubernetes cluster.
 
-Each laptop has its own local Kubernetes cluster.
+Each pc has its own local Kubernetes cluster.
 
-Therefore, before starting Task 2 on another laptop, you must recreate the Task 1 **prerequisite resources** in that laptop's Docker Desktop Kubernetes cluster.
+Therefore, before starting Task 2 on another pc, you must recreate the Task 1 **prerequisite resources** in that pc's Docker Desktop Kubernetes cluster.
 
 You do **not** need to manually repeat all Task 1 experiments.
 
