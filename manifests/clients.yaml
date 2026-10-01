@@ -1,0 +1,142 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: owner
+  namespace: bd-g06
+  labels:
+    app: s3-client
+    access: s3
+    principal: owner
+spec:
+  automountServiceAccountToken: false
+  securityContext:
+    runAsUser: 1000
+    runAsGroup: 1000
+    runAsNonRoot: true
+  containers:
+    - name: client
+      image: bd-g06-s3-client:lab1
+      imagePullPolicy: Never
+      command: ["sleep", "infinity"]
+      envFrom:
+        - secretRef:
+            name: s3-owner
+      env:
+        - name: S3_ENDPOINT
+          value: "http://objects:8333"
+        - name: PRINCIPAL
+          value: "owner"
+      resources:
+        requests:
+          cpu: "100m"
+          memory: "128Mi"
+        limits:
+          cpu: "500m"
+          memory: "512Mi"
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ingestor
+  namespace: bd-g06
+  labels:
+    app: s3-client
+    access: s3
+    principal: ingestor
+spec:
+  automountServiceAccountToken: false
+  securityContext:
+    runAsUser: 1000
+    runAsGroup: 1000
+    runAsNonRoot: true
+  containers:
+    - name: client
+      image: bd-g06-s3-client:lab1
+      imagePullPolicy: Never
+      command: ["sleep", "infinity"]
+      envFrom:
+        - secretRef:
+            name: s3-ingestor
+      env:
+        - name: S3_ENDPOINT
+          value: "http://objects:8333"
+        - name: PRINCIPAL
+          value: "ingestor"
+      resources:
+        requests:
+          cpu: "100m"
+          memory: "128Mi"
+        limits:
+          cpu: "500m"
+          memory: "512Mi"
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: analyst
+  namespace: bd-g06
+  labels:
+    app: s3-client
+    access: s3
+    principal: analyst
+spec:
+  automountServiceAccountToken: false
+  securityContext:
+    runAsUser: 1000
+    runAsGroup: 1000
+    runAsNonRoot: true
+  containers:
+    - name: client
+      image: bd-g06-s3-client:lab1
+      imagePullPolicy: Never
+      command: ["sleep", "infinity"]
+      envFrom:
+        - secretRef:
+            name: s3-analyst
+      env:
+        - name: S3_ENDPOINT
+          value: "http://objects:8333"
+        - name: PRINCIPAL
+          value: "analyst"
+      resources:
+        requests:
+          cpu: "100m"
+          memory: "128Mi"
+        limits:
+          cpu: "500m"
+          memory: "512Mi"
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: blocked
+  namespace: bd-g06
+  labels:
+    app: s3-client
+    principal: blocked
+spec:
+  automountServiceAccountToken: false
+  securityContext:
+    runAsUser: 1000
+    runAsGroup: 1000
+    runAsNonRoot: true
+  containers:
+    - name: client
+      image: bd-g06-s3-client:lab1
+      imagePullPolicy: Never
+      command: ["sleep", "infinity"]
+      env:
+        - name: S3_ENDPOINT
+          value: "http://objects:8333"
+        - name: PRINCIPAL
+          value: "blocked"
+      resources:
+        requests:
+          cpu: "100m"
+          memory: "128Mi"
+        limits:
+          cpu: "500m"
+          memory: "512Mi"
