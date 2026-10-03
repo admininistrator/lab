@@ -1,0 +1,10 @@
+﻿Task 2 independent check (Role E checks Role B storage)
+- Pod objects-567454b664-kg2p5: 1/1 Running
+- PVC object-data: Bound, 4Gi, RWO, StorageClass standard, volume pvc-3f51ea35-590e-43c3-bcc3-ea84d1eb7540
+- Service objects: ClusterIP, 8333/TCP; EndpointSlice endpoint 10.244.120.71 = Pod IP
+- ingestor GET research-raw/fixture.txt: http 200, ok true
+- analyst GET research-release/fixture.txt: http 200, ok true
+- both sha256 = 9ce4c8bb96c85122c3b386653fbe9150cb2f4df03f25c83408fe11c29b87d6f8
+- expected sha256 of FIXTURE (25 bytes) computed independently: same value
+- seed.jsonl: 4 lines, all op put http 200 ok true by owner; research-raw and research-release each with fixture.txt and delete-probe.txt (seed utc 2026-10-03T11:11:35, later than the Task2_15/16 reads of 2026-10-01)
+- Not seen in repo evidence: imageID, Pod UID, PVC UID

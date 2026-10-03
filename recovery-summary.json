@@ -1,0 +1,23 @@
+{
+    "pod_uid_changed":  true,
+    "pvc_uid_unchanged":  true,
+    "verified_before":  true,
+    "verified_after":  true,
+    "first_failure_start_s":  30.099549647999993,
+    "stable_read_end_s":  37.131750194999995,
+    "observed_interruption_s":  7.032200547000002,
+    "failed_reads":  7,
+    "sampling_limit":  "client-side canary, one trial; reads about 1 s apart plus 1 s pause; failed reads were fast connection errors, so resolution is about 1 s",
+    "policy_retests":  [
+                           "S06",
+                           "S08",
+                           "S10"
+                       ],
+    "unproven":  [
+                     "HA",
+                     "backup",
+                     "node-loss durability"
+                 ],
+    "evidence_dir":  "evidence/t5/run2",
+    "note":  "first attempt in evidence/t5 is not valid for timing: canary ended before the Pod was deleted; run2 is the valid run"
+}
