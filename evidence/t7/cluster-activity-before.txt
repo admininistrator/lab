@@ -1,0 +1,15 @@
+NAMESPACE            NAME                                            READY   STATUS    RESTARTS   AGE     IP            NODE                    NOMINATED NODE   READINESS GATES
+bd-g06               analyst                                         1/1     Running   0          8m21s   10.244.0.9    desktop-control-plane   <none>           <none>
+bd-g06               blocked                                         1/1     Running   0          8m21s   10.244.0.10   desktop-control-plane   <none>           <none>
+bd-g06               ingestor                                        1/1     Running   0          8m21s   10.244.0.8    desktop-control-plane   <none>           <none>
+bd-g06               objects-7774b5c7cf-h2ghc                        1/1     Running   0          8m47s   10.244.0.6    desktop-control-plane   <none>           <none>
+bd-g06               owner                                           1/1     Running   0          8m21s   10.244.0.7    desktop-control-plane   <none>           <none>
+kube-system          coredns-589f44dc88-nwt97                        1/1     Running   0          14m     10.244.0.2    desktop-control-plane   <none>           <none>
+kube-system          coredns-589f44dc88-vrczt                        1/1     Running   0          14m     10.244.0.3    desktop-control-plane   <none>           <none>
+kube-system          etcd-desktop-control-plane                      1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kindnet-r4t7b                                   1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kube-apiserver-desktop-control-plane            1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kube-controller-manager-desktop-control-plane   1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kube-proxy-qj7fd                                1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kube-scheduler-desktop-control-plane            1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+local-path-storage   local-path-provisioner-855c7b7774-j8pcr         1/1     Running   0          14m     10.244.0.4    desktop-control-plane   <none>           <none>

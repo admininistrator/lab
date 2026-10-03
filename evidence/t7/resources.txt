@@ -1,0 +1,8 @@
+NAME                      READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/objects   1/1     1            1           8m47s
+
+NAME              TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE
+service/objects   ClusterIP   10.96.202.159   <none>        8333/TCP   8m47s
+
+NAME                                STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE
+persistentvolumeclaim/object-data   Bound    pvc-7417c747-d60c-4d98-86bd-5b2c1a0ae1b2   4Gi        RWO            standard       <unset>                 8m47s

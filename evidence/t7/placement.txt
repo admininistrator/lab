@@ -1,0 +1,6 @@
+NAME                       READY   STATUS    RESTARTS   AGE     IP            NODE                    NOMINATED NODE   READINESS GATES
+analyst                    1/1     Running   0          8m21s   10.244.0.9    desktop-control-plane   <none>           <none>
+blocked                    1/1     Running   0          8m21s   10.244.0.10   desktop-control-plane   <none>           <none>
+ingestor                   1/1     Running   0          8m21s   10.244.0.8    desktop-control-plane   <none>           <none>
+objects-7774b5c7cf-h2ghc   1/1     Running   0          8m47s   10.244.0.6    desktop-control-plane   <none>           <none>
+owner                      1/1     Running   0          8m21s   10.244.0.7    desktop-control-plane   <none>           <none>

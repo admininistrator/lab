@@ -1,0 +1,274 @@
+{
+  "profile": "32 x 4 MiB = 128 MiB per phase",
+  "hypothesis": "With fixed storage resources and payload, four concurrent requests improve application transfer goodput relative to one.",
+  "trials": [
+    {
+      "run": "r1-c1",
+      "concurrency": 1,
+      "put": {
+        "n": 32,
+        "successes": 32,
+        "failed": 0,
+        "success_ratio": 1.0,
+        "wall_s": 1.1870390199999292,
+        "goodput_MiB_s": 107.83133312669673,
+        "p95_success_ms": 46.62427400012348,
+        "failed_errors": [],
+        "mismatches": [],
+        "helper_summary": {
+          "goodput_MiB_s": 107.83133312669673,
+          "p95_success_ms": 46.62427400012348,
+          "successes": 32
+        }
+      },
+      "get": {
+        "n": 32,
+        "successes": 32,
+        "failed": 0,
+        "success_ratio": 1.0,
+        "wall_s": 0.33937977200002933,
+        "goodput_MiB_s": 377.1586009551239,
+        "p95_success_ms": 28.8193940000383,
+        "failed_errors": [],
+        "mismatches": [],
+        "helper_summary": {
+          "goodput_MiB_s": 377.1586009551239,
+          "p95_success_ms": 28.8193940000383,
+          "successes": 32
+        }
+      }
+    },
+    {
+      "run": "r1-c4",
+      "concurrency": 4,
+      "put": {
+        "n": 32,
+        "successes": 32,
+        "failed": 0,
+        "success_ratio": 1.0,
+        "wall_s": 1.2462079120000453,
+        "goodput_MiB_s": 102.7115931197806,
+        "p95_success_ms": 279.533051000044,
+        "failed_errors": [],
+        "mismatches": [],
+        "helper_summary": {
+          "goodput_MiB_s": 102.7115931197806,
+          "p95_success_ms": 279.533051000044,
+          "successes": 32
+        }
+      },
+      "get": {
+        "n": 32,
+        "successes": 32,
+        "failed": 0,
+        "success_ratio": 1.0,
+        "wall_s": 0.5110039809999307,
+        "goodput_MiB_s": 250.48728534272877,
+        "p95_success_ms": 99.44028099994284,
+        "failed_errors": [],
+        "mismatches": [],
+        "helper_summary": {
+          "goodput_MiB_s": 250.48728534272877,
+          "p95_success_ms": 99.44028099994284,
+          "successes": 32
+        }
+      }
+    },
+    {
+      "run": "r2-c4",
+      "concurrency": 4,
+      "put": {
+        "n": 32,
+        "successes": 32,
+        "failed": 0,
+        "success_ratio": 1.0,
+        "wall_s": 1.2610842740000408,
+        "goodput_MiB_s": 101.49995732957325,
+        "p95_success_ms": 225.99193099995318,
+        "failed_errors": [],
+        "mismatches": [],
+        "helper_summary": {
+          "goodput_MiB_s": 101.49995732957325,
+          "p95_success_ms": 225.99193099995318,
+          "successes": 32
+        }
+      },
+      "get": {
+        "n": 32,
+        "successes": 32,
+        "failed": 0,
+        "success_ratio": 1.0,
+        "wall_s": 0.6060644110000339,
+        "goodput_MiB_s": 211.1986740630326,
+        "p95_success_ms": 100.0761440000133,
+        "failed_errors": [],
+        "mismatches": [],
+        "helper_summary": {
+          "goodput_MiB_s": 211.1986740630326,
+          "p95_success_ms": 100.0761440000133,
+          "successes": 32
+        }
+      }
+    },
+    {
+      "run": "r2-c1",
+      "concurrency": 1,
+      "put": {
+        "n": 32,
+        "successes": 32,
+        "failed": 0,
+        "success_ratio": 1.0,
+        "wall_s": 1.7071839710001768,
+        "goodput_MiB_s": 74.97727378790317,
+        "p95_success_ms": 94.9126680000063,
+        "failed_errors": [],
+        "mismatches": [],
+        "helper_summary": {
+          "goodput_MiB_s": 74.97727378790317,
+          "p95_success_ms": 94.9126680000063,
+          "successes": 32
+        }
+      },
+      "get": {
+        "n": 32,
+        "successes": 32,
+        "failed": 0,
+        "success_ratio": 1.0,
+        "wall_s": 0.5496120530001463,
+        "goodput_MiB_s": 232.89154468372973,
+        "p95_success_ms": 33.411030000024766,
+        "failed_errors": [],
+        "mismatches": [],
+        "helper_summary": {
+          "goodput_MiB_s": 232.89154468372973,
+          "p95_success_ms": 33.411030000024766,
+          "successes": 32
+        }
+      }
+    },
+    {
+      "run": "r3-c1",
+      "concurrency": 1,
+      "put": {
+        "n": 32,
+        "successes": 32,
+        "failed": 0,
+        "success_ratio": 1.0,
+        "wall_s": 1.4170597499999076,
+        "goodput_MiB_s": 90.32787784707621,
+        "p95_success_ms": 67.81944499994097,
+        "failed_errors": [],
+        "mismatches": [],
+        "helper_summary": {
+          "goodput_MiB_s": 90.32787784707621,
+          "p95_success_ms": 67.81944499994097,
+          "successes": 32
+        }
+      },
+      "get": {
+        "n": 32,
+        "successes": 32,
+        "failed": 0,
+        "success_ratio": 1.0,
+        "wall_s": 0.5474849049999193,
+        "goodput_MiB_s": 233.79640028617567,
+        "p95_success_ms": 33.00316200011366,
+        "failed_errors": [],
+        "mismatches": [],
+        "helper_summary": {
+          "goodput_MiB_s": 233.79640028617567,
+          "p95_success_ms": 33.00316200011366,
+          "successes": 32
+        }
+      }
+    },
+    {
+      "run": "r3-c4",
+      "concurrency": 4,
+      "put": {
+        "n": 32,
+        "successes": 32,
+        "failed": 0,
+        "success_ratio": 1.0,
+        "wall_s": 1.3360992800000986,
+        "goodput_MiB_s": 95.80126410964802,
+        "p95_success_ms": 258.30875499991635,
+        "failed_errors": [],
+        "mismatches": [],
+        "helper_summary": {
+          "goodput_MiB_s": 95.80126410964802,
+          "p95_success_ms": 258.30875499991635,
+          "successes": 32
+        }
+      },
+      "get": {
+        "n": 32,
+        "successes": 32,
+        "failed": 0,
+        "success_ratio": 1.0,
+        "wall_s": 0.5859180550000929,
+        "goodput_MiB_s": 218.46058319534072,
+        "p95_success_ms": 91.43379800002549,
+        "failed_errors": [],
+        "mismatches": [],
+        "helper_summary": {
+          "goodput_MiB_s": 218.46058319534072,
+          "p95_success_ms": 91.43379800002549,
+          "successes": 32
+        }
+      }
+    }
+  ],
+  "integrity": {
+    "valid_puts": 192,
+    "verified_gets": 192,
+    "target_puts": 192,
+    "target_gets": 192
+  },
+  "comparison": [
+    {
+      "phase": "put",
+      "goodput_c1": [
+        107.83133312669673,
+        74.97727378790317,
+        90.32787784707621
+      ],
+      "goodput_c4": [
+        102.7115931197806,
+        101.49995732957325,
+        95.80126410964802
+      ],
+      "median_c1": 90.32787784707621,
+      "median_c4": 101.49995732957325,
+      "ratio_c4_over_c1": 1.1236836262378622,
+      "verdict": "supports: c=4 median goodput is higher"
+    },
+    {
+      "phase": "get",
+      "goodput_c1": [
+        377.1586009551239,
+        232.89154468372973,
+        233.79640028617567
+      ],
+      "goodput_c4": [
+        250.48728534272877,
+        211.1986740630326,
+        218.46058319534072
+      ],
+      "median_c1": 233.79640028617567,
+      "median_c4": 218.46058319534072,
+      "ratio_c4_over_c1": 0.9344052471635007,
+      "verdict": "does not support: c=4 median goodput is lower"
+    }
+  ],
+  "interpretation": "The c=4 median PUT goodput was 12.4% higher, while median GET goodput was 6.6% lower. The result is phase-dependent and inconclusive for a blanket claim that four concurrent requests improve goodput; the observed difference does not identify a cause.",
+  "notes": [
+    "Goodput = successful bytes / 2^20 / phase wall seconds.",
+    "GET wall time includes SHA-256 verify and bookkeeping; per-request ms does not include hashing.",
+    "p95 is nearest-rank among successful requests in that phase/trial; n=32 is a coarse tail.",
+    "Average of trial p95s is not a pooled p95 and is not reported as one.",
+    "Only thread concurrency changed; this is not storage scale-out.",
+    "Confounders: page/object cache after PUT, client CPU limit 500m, store CPU limit 1, in-cluster Docker Desktop network, single seaweedfs mini replica, shared-cluster class load.",
+    "kubectl top was sampled, but the cluster Metrics API was unavailable; the errors are preserved in samples.txt. Pod status was sampled."
+  ]
+}
