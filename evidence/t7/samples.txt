@@ -1,0 +1,196 @@
+=== 2026-10-03T14:51:57.9717465Z ===
+[namespace pods]
+NAME                       READY   STATUS    RESTARTS   AGE     IP            NODE                    NOMINATED NODE   READINESS GATES
+analyst                    1/1     Running   0          8m22s   10.244.0.9    desktop-control-plane   <none>           <none>
+blocked                    1/1     Running   0          8m22s   10.244.0.10   desktop-control-plane   <none>           <none>
+ingestor                   1/1     Running   0          8m22s   10.244.0.8    desktop-control-plane   <none>           <none>
+objects-7774b5c7cf-h2ghc   1/1     Running   0          8m48s   10.244.0.6    desktop-control-plane   <none>           <none>
+owner                      1/1     Running   0          8m22s   10.244.0.7    desktop-control-plane   <none>           <none>
+
+[namespace top]
+kubectl : error: Metrics API not available
+At D:\Device\UET\BigData\lab\scripts\t7-sample.ps1:20 char:14
++     $topNs = kubectl -n $Namespace top pod 2>&1 | Out-String
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (error: Metrics API not available:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+[cluster pods]
+NAMESPACE            NAME                                            READY   STATUS    RESTARTS   AGE     IP            NODE                    NOMINATED NODE   READINESS GATES
+bd-g06               analyst                                         1/1     Running   0          8m22s   10.244.0.9    desktop-control-plane   <none>           <none>
+bd-g06               blocked                                         1/1     Running   0          8m22s   10.244.0.10   desktop-control-plane   <none>           <none>
+bd-g06               ingestor                                        1/1     Running   0          8m22s   10.244.0.8    desktop-control-plane   <none>           <none>
+bd-g06               objects-7774b5c7cf-h2ghc                        1/1     Running   0          8m48s   10.244.0.6    desktop-control-plane   <none>           <none>
+bd-g06               owner                                           1/1     Running   0          8m22s   10.244.0.7    desktop-control-plane   <none>           <none>
+kube-system          coredns-589f44dc88-nwt97                        1/1     Running   0          14m     10.244.0.2    desktop-control-plane   <none>           <none>
+kube-system          coredns-589f44dc88-vrczt                        1/1     Running   0          14m     10.244.0.3    desktop-control-plane   <none>           <none>
+kube-system          etcd-desktop-control-plane                      1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kindnet-r4t7b                                   1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kube-apiserver-desktop-control-plane            1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kube-controller-manager-desktop-control-plane   1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kube-proxy-qj7fd                                1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kube-scheduler-desktop-control-plane            1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+local-path-storage   local-path-provisioner-855c7b7774-j8pcr         1/1     Running   0          14m     10.244.0.4    desktop-control-plane   <none>           <none>
+
+[cluster top]
+kubectl : error: Metrics API not available
+At D:\Device\UET\BigData\lab\scripts\t7-sample.ps1:22 char:15
++     $topAll = kubectl top pod -A 2>&1 | Out-String
++               ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (error: Metrics API not available:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+[nodes]
+NAME                    STATUS   ROLES           AGE   VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE                       KERNEL-VERSION                              CONTAINER-RUNTIME
+desktop-control-plane   Ready    control-plane   14m   v1.36.1   172.18.0.2    <none>        Debian GNU/Linux 13 (trixie)   6.18.40.1-microsoft-standard-WSL2 (amd64)   containerd://2.3.1
+
+
+=== 2026-10-03T14:52:03.4300694Z ===
+[namespace pods]
+NAME                       READY   STATUS    RESTARTS   AGE     IP            NODE                    NOMINATED NODE   READINESS GATES
+analyst                    1/1     Running   0          8m28s   10.244.0.9    desktop-control-plane   <none>           <none>
+blocked                    1/1     Running   0          8m28s   10.244.0.10   desktop-control-plane   <none>           <none>
+ingestor                   1/1     Running   0          8m28s   10.244.0.8    desktop-control-plane   <none>           <none>
+objects-7774b5c7cf-h2ghc   1/1     Running   0          8m54s   10.244.0.6    desktop-control-plane   <none>           <none>
+owner                      1/1     Running   0          8m28s   10.244.0.7    desktop-control-plane   <none>           <none>
+
+[namespace top]
+kubectl : error: Metrics API not available
+At D:\Device\UET\BigData\lab\scripts\t7-sample.ps1:20 char:14
++     $topNs = kubectl -n $Namespace top pod 2>&1 | Out-String
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (error: Metrics API not available:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+[cluster pods]
+NAMESPACE            NAME                                            READY   STATUS    RESTARTS   AGE     IP            NODE                    NOMINATED NODE   READINESS GATES
+bd-g06               analyst                                         1/1     Running   0          8m28s   10.244.0.9    desktop-control-plane   <none>           <none>
+bd-g06               blocked                                         1/1     Running   0          8m28s   10.244.0.10   desktop-control-plane   <none>           <none>
+bd-g06               ingestor                                        1/1     Running   0          8m28s   10.244.0.8    desktop-control-plane   <none>           <none>
+bd-g06               objects-7774b5c7cf-h2ghc                        1/1     Running   0          8m54s   10.244.0.6    desktop-control-plane   <none>           <none>
+bd-g06               owner                                           1/1     Running   0          8m28s   10.244.0.7    desktop-control-plane   <none>           <none>
+kube-system          coredns-589f44dc88-nwt97                        1/1     Running   0          14m     10.244.0.2    desktop-control-plane   <none>           <none>
+kube-system          coredns-589f44dc88-vrczt                        1/1     Running   0          14m     10.244.0.3    desktop-control-plane   <none>           <none>
+kube-system          etcd-desktop-control-plane                      1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kindnet-r4t7b                                   1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kube-apiserver-desktop-control-plane            1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kube-controller-manager-desktop-control-plane   1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kube-proxy-qj7fd                                1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kube-scheduler-desktop-control-plane            1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+local-path-storage   local-path-provisioner-855c7b7774-j8pcr         1/1     Running   0          14m     10.244.0.4    desktop-control-plane   <none>           <none>
+
+[cluster top]
+kubectl : error: Metrics API not available
+At D:\Device\UET\BigData\lab\scripts\t7-sample.ps1:22 char:15
++     $topAll = kubectl top pod -A 2>&1 | Out-String
++               ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (error: Metrics API not available:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+[nodes]
+NAME                    STATUS   ROLES           AGE   VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE                       KERNEL-VERSION                              CONTAINER-RUNTIME
+desktop-control-plane   Ready    control-plane   14m   v1.36.1   172.18.0.2    <none>        Debian GNU/Linux 13 (trixie)   6.18.40.1-microsoft-standard-WSL2 (amd64)   containerd://2.3.1
+
+
+=== 2026-10-03T14:52:08.9616602Z ===
+[namespace pods]
+NAME                       READY   STATUS    RESTARTS   AGE     IP            NODE                    NOMINATED NODE   READINESS GATES
+analyst                    1/1     Running   0          8m33s   10.244.0.9    desktop-control-plane   <none>           <none>
+blocked                    1/1     Running   0          8m33s   10.244.0.10   desktop-control-plane   <none>           <none>
+ingestor                   1/1     Running   0          8m33s   10.244.0.8    desktop-control-plane   <none>           <none>
+objects-7774b5c7cf-h2ghc   1/1     Running   0          8m59s   10.244.0.6    desktop-control-plane   <none>           <none>
+owner                      1/1     Running   0          8m33s   10.244.0.7    desktop-control-plane   <none>           <none>
+
+[namespace top]
+kubectl : error: Metrics API not available
+At D:\Device\UET\BigData\lab\scripts\t7-sample.ps1:20 char:14
++     $topNs = kubectl -n $Namespace top pod 2>&1 | Out-String
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (error: Metrics API not available:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+[cluster pods]
+NAMESPACE            NAME                                            READY   STATUS    RESTARTS   AGE     IP            NODE                    NOMINATED NODE   READINESS GATES
+bd-g06               analyst                                         1/1     Running   0          8m33s   10.244.0.9    desktop-control-plane   <none>           <none>
+bd-g06               blocked                                         1/1     Running   0          8m33s   10.244.0.10   desktop-control-plane   <none>           <none>
+bd-g06               ingestor                                        1/1     Running   0          8m33s   10.244.0.8    desktop-control-plane   <none>           <none>
+bd-g06               objects-7774b5c7cf-h2ghc                        1/1     Running   0          8m59s   10.244.0.6    desktop-control-plane   <none>           <none>
+bd-g06               owner                                           1/1     Running   0          8m33s   10.244.0.7    desktop-control-plane   <none>           <none>
+kube-system          coredns-589f44dc88-nwt97                        1/1     Running   0          14m     10.244.0.2    desktop-control-plane   <none>           <none>
+kube-system          coredns-589f44dc88-vrczt                        1/1     Running   0          14m     10.244.0.3    desktop-control-plane   <none>           <none>
+kube-system          etcd-desktop-control-plane                      1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kindnet-r4t7b                                   1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kube-apiserver-desktop-control-plane            1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kube-controller-manager-desktop-control-plane   1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kube-proxy-qj7fd                                1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kube-scheduler-desktop-control-plane            1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+local-path-storage   local-path-provisioner-855c7b7774-j8pcr         1/1     Running   0          14m     10.244.0.4    desktop-control-plane   <none>           <none>
+
+[cluster top]
+kubectl : error: Metrics API not available
+At D:\Device\UET\BigData\lab\scripts\t7-sample.ps1:22 char:15
++     $topAll = kubectl top pod -A 2>&1 | Out-String
++               ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (error: Metrics API not available:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+[nodes]
+NAME                    STATUS   ROLES           AGE   VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE                       KERNEL-VERSION                              CONTAINER-RUNTIME
+desktop-control-plane   Ready    control-plane   14m   v1.36.1   172.18.0.2    <none>        Debian GNU/Linux 13 (trixie)   6.18.40.1-microsoft-standard-WSL2 (amd64)   containerd://2.3.1
+
+
+=== 2026-10-03T14:52:14.6056305Z ===
+[namespace pods]
+NAME                       READY   STATUS    RESTARTS   AGE     IP            NODE                    NOMINATED NODE   READINESS GATES
+analyst                    1/1     Running   0          8m39s   10.244.0.9    desktop-control-plane   <none>           <none>
+blocked                    1/1     Running   0          8m39s   10.244.0.10   desktop-control-plane   <none>           <none>
+ingestor                   1/1     Running   0          8m39s   10.244.0.8    desktop-control-plane   <none>           <none>
+objects-7774b5c7cf-h2ghc   1/1     Running   0          9m5s    10.244.0.6    desktop-control-plane   <none>           <none>
+owner                      1/1     Running   0          8m39s   10.244.0.7    desktop-control-plane   <none>           <none>
+
+[namespace top]
+kubectl : error: Metrics API not available
+At D:\Device\UET\BigData\lab\scripts\t7-sample.ps1:20 char:14
++     $topNs = kubectl -n $Namespace top pod 2>&1 | Out-String
++              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (error: Metrics API not available:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+[cluster pods]
+NAMESPACE            NAME                                            READY   STATUS    RESTARTS   AGE     IP            NODE                    NOMINATED NODE   READINESS GATES
+bd-g06               analyst                                         1/1     Running   0          8m39s   10.244.0.9    desktop-control-plane   <none>           <none>
+bd-g06               blocked                                         1/1     Running   0          8m39s   10.244.0.10   desktop-control-plane   <none>           <none>
+bd-g06               ingestor                                        1/1     Running   0          8m39s   10.244.0.8    desktop-control-plane   <none>           <none>
+bd-g06               objects-7774b5c7cf-h2ghc                        1/1     Running   0          9m5s    10.244.0.6    desktop-control-plane   <none>           <none>
+bd-g06               owner                                           1/1     Running   0          8m39s   10.244.0.7    desktop-control-plane   <none>           <none>
+kube-system          coredns-589f44dc88-nwt97                        1/1     Running   0          14m     10.244.0.2    desktop-control-plane   <none>           <none>
+kube-system          coredns-589f44dc88-vrczt                        1/1     Running   0          14m     10.244.0.3    desktop-control-plane   <none>           <none>
+kube-system          etcd-desktop-control-plane                      1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kindnet-r4t7b                                   1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kube-apiserver-desktop-control-plane            1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kube-controller-manager-desktop-control-plane   1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kube-proxy-qj7fd                                1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+kube-system          kube-scheduler-desktop-control-plane            1/1     Running   0          14m     172.18.0.2    desktop-control-plane   <none>           <none>
+local-path-storage   local-path-provisioner-855c7b7774-j8pcr         1/1     Running   0          14m     10.244.0.4    desktop-control-plane   <none>           <none>
+
+[cluster top]
+kubectl : error: Metrics API not available
+At D:\Device\UET\BigData\lab\scripts\t7-sample.ps1:22 char:15
++     $topAll = kubectl top pod -A 2>&1 | Out-String
++               ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (error: Metrics API not available:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+[nodes]
+NAME                    STATUS   ROLES           AGE   VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE                       KERNEL-VERSION                              CONTAINER-RUNTIME
+desktop-control-plane   Ready    control-plane   14m   v1.36.1   172.18.0.2    <none>        Debian GNU/Linux 13 (trixie)   6.18.40.1-microsoft-standard-WSL2 (amd64)   containerd://2.3.1
+
+
