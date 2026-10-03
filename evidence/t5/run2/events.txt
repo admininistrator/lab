@@ -1,0 +1,70 @@
+LAST SEEN   TYPE      REASON                  OBJECT                              MESSAGE
+7m56s       Normal    Scheduled               pod/objects-7774b5c7cf-hc9sq        Successfully assigned bd-g06/objects-7774b5c7cf-hc9sq to desktop-control-plane
+29m         Normal    Scheduled               pod/analyst                         Successfully assigned bd-g06/analyst to desktop-control-plane
+29m         Normal    Scheduled               pod/ingestor                        Successfully assigned bd-g06/ingestor to desktop-control-plane
+19m         Normal    Scheduled               pod/owner                           Successfully assigned bd-g06/owner to desktop-control-plane
+19m         Normal    Scheduled               pod/ingestor                        Successfully assigned bd-g06/ingestor to desktop-control-plane
+30m         Normal    Scheduled               pod/objects-7774b5c7cf-kdmn2        Successfully assigned bd-g06/objects-7774b5c7cf-kdmn2 to desktop-control-plane
+29m         Normal    Scheduled               pod/owner                           Successfully assigned bd-g06/owner to desktop-control-plane
+19m         Normal    Scheduled               pod/analyst                         Successfully assigned bd-g06/analyst to desktop-control-plane
+19m         Normal    Scheduled               pod/blocked                         Successfully assigned bd-g06/blocked to desktop-control-plane
+29m         Normal    Scheduled               pod/blocked                         Successfully assigned bd-g06/blocked to desktop-control-plane
+12m         Normal    Scheduled               pod/objects-7774b5c7cf-lhk5n        Successfully assigned bd-g06/objects-7774b5c7cf-lhk5n to desktop-control-plane
+30m         Normal    ScalingReplicaSet       deployment/objects                  Scaled up replica set objects-7774b5c7cf from 0 to 1
+30m         Normal    SuccessfulCreate        replicaset/objects-7774b5c7cf       Created pod: objects-7774b5c7cf-kdmn2
+30m         Normal    WaitForFirstConsumer    persistentvolumeclaim/object-data   waiting for first consumer to be created before binding
+30m         Normal    ExternalProvisioning    persistentvolumeclaim/object-data   Waiting for a volume to be created either by the external provisioner 'rancher.io/local-path' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.
+30m         Normal    Provisioning            persistentvolumeclaim/object-data   External provisioner is provisioning volume for claim "bd-g06/object-data"
+30m         Normal    ProvisioningSucceeded   persistentvolumeclaim/object-data   Successfully provisioned volume pvc-ce32d0ab-926b-4110-b119-f98d0d6e91ab
+30m         Normal    Pulling                 pod/objects-7774b5c7cf-kdmn2        Pulling image "chrislusf/seaweedfs@sha256:4e61d15fd35994cb1e43e1e553dff106794841fd9a99ade2fc8c8bfce4d7872d"
+30m         Normal    Pulled                  pod/objects-7774b5c7cf-kdmn2        Successfully pulled image "chrislusf/seaweedfs@sha256:4e61d15fd35994cb1e43e1e553dff106794841fd9a99ade2fc8c8bfce4d7872d" in 7.972s (7.972s including waiting). Image size: 193574240 bytes.
+29m         Normal    Created                 pod/objects-7774b5c7cf-kdmn2        Container created
+29m         Normal    Started                 pod/objects-7774b5c7cf-kdmn2        Container started
+27m         Warning   Failed                  pod/owner                           Error: ErrImageNeverPull
+27m         Warning   Failed                  pod/blocked                         Error: ErrImageNeverPull
+27m         Warning   Failed                  pod/analyst                         Error: ErrImageNeverPull
+27m         Warning   Failed                  pod/ingestor                        Error: ErrImageNeverPull
+24m         Warning   ErrImageNeverPull       pod/ingestor                        Container image "bd-g06-s3-client:lab1" is not present with pull policy of Never
+24m         Warning   ErrImageNeverPull       pod/owner                           Container image "bd-g06-s3-client:lab1" is not present with pull policy of Never
+24m         Warning   ErrImageNeverPull       pod/analyst                         Container image "bd-g06-s3-client:lab1" is not present with pull policy of Never
+24m         Warning   ErrImageNeverPull       pod/blocked                         Container image "bd-g06-s3-client:lab1" is not present with pull policy of Never
+20m         Normal    Started                 pod/blocked                         Container started
+20m         Normal    Pulled                  pod/blocked                         Container image "bd-g06-s3-client:lab1" already present on machine and can be accessed by the pod
+20m         Normal    Pulled                  pod/analyst                         Container image "bd-g06-s3-client:lab1" already present on machine and can be accessed by the pod
+20m         Normal    Created                 pod/blocked                         Container created
+20m         Normal    Started                 pod/analyst                         Container started
+20m         Normal    Created                 pod/analyst                         Container created
+20m         Normal    Started                 pod/ingestor                        Container started
+20m         Normal    Created                 pod/ingestor                        Container created
+20m         Normal    Pulled                  pod/ingestor                        Container image "bd-g06-s3-client:lab1" already present on machine and can be accessed by the pod
+20m         Normal    Pulled                  pod/owner                           Container image "bd-g06-s3-client:lab1" already present on machine and can be accessed by the pod
+20m         Normal    Created                 pod/owner                           Container created
+20m         Normal    Started                 pod/owner                           Container started
+20m         Normal    Killing                 pod/ingestor                        Stopping container client
+20m         Normal    Killing                 pod/analyst                         Stopping container client
+20m         Normal    Killing                 pod/blocked                         Stopping container client
+20m         Normal    Killing                 pod/owner                           Stopping container client
+19m         Normal    Pulled                  pod/analyst                         Container image "bd-g06-s3-client:lab1" already present on machine and can be accessed by the pod
+19m         Normal    Pulled                  pod/blocked                         Container image "bd-g06-s3-client:lab1" already present on machine and can be accessed by the pod
+19m         Normal    Started                 pod/ingestor                        Container started
+19m         Normal    Started                 pod/analyst                         Container started
+19m         Normal    Created                 pod/ingestor                        Container created
+19m         Normal    Pulled                  pod/owner                           Container image "bd-g06-s3-client:lab1" already present on machine and can be accessed by the pod
+19m         Normal    Created                 pod/blocked                         Container created
+19m         Normal    Started                 pod/owner                           Container started
+19m         Normal    Created                 pod/owner                           Container created
+19m         Normal    Created                 pod/analyst                         Container created
+19m         Normal    Started                 pod/blocked                         Container started
+19m         Normal    Pulled                  pod/ingestor                        Container image "bd-g06-s3-client:lab1" already present on machine and can be accessed by the pod
+12m         Normal    Killing                 pod/objects-7774b5c7cf-kdmn2        Stopping container store
+12m         Normal    SuccessfulCreate        replicaset/objects-7774b5c7cf       Created pod: objects-7774b5c7cf-lhk5n
+12m         Normal    Started                 pod/objects-7774b5c7cf-lhk5n        Container started
+12m         Normal    Created                 pod/objects-7774b5c7cf-lhk5n        Container created
+12m         Normal    Pulled                  pod/objects-7774b5c7cf-lhk5n        Container image "chrislusf/seaweedfs@sha256:4e61d15fd35994cb1e43e1e553dff106794841fd9a99ade2fc8c8bfce4d7872d" already present on machine and can be accessed by the pod
+12m         Warning   Unhealthy               pod/objects-7774b5c7cf-kdmn2        Readiness probe failed: dial tcp 10.244.0.6:8333: connect: connection refused
+7m57s       Normal    SuccessfulCreate        replicaset/objects-7774b5c7cf       Created pod: objects-7774b5c7cf-hc9sq
+7m57s       Normal    Killing                 pod/objects-7774b5c7cf-lhk5n        Stopping container store
+7m56s       Normal    Pulled                  pod/objects-7774b5c7cf-hc9sq        Container image "chrislusf/seaweedfs@sha256:4e61d15fd35994cb1e43e1e553dff106794841fd9a99ade2fc8c8bfce4d7872d" already present on machine and can be accessed by the pod
+7m56s       Normal    Created                 pod/objects-7774b5c7cf-hc9sq        Container created
+7m56s       Normal    Started                 pod/objects-7774b5c7cf-hc9sq        Container started
+7m56s       Warning   Unhealthy               pod/objects-7774b5c7cf-lhk5n        Readiness probe failed: dial tcp 10.244.0.15:8333: connect: connection refused
