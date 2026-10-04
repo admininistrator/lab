@@ -1,0 +1,125 @@
+LAST SEEN   TYPE      REASON                  OBJECT                              MESSAGE
+26m         Normal    Scheduled               pod/analyst                         Successfully assigned bd-g06/analyst to docker-desktop
+21m         Warning   ErrImageNeverPull       pod/analyst                         Container image "bd-g06-s3-client:lab1" is not present with pull policy of Never
+24m         Warning   Failed                  pod/analyst                         Error: ErrImageNeverPull
+17m         Normal    Scheduled               pod/analyst                         Successfully assigned bd-g06/analyst to docker-desktop
+12m         Warning   ErrImageNeverPull       pod/analyst                         Container image "bd-g06-s3-client:lab1" is not present with pull policy of Never
+15m         Warning   Failed                  pod/analyst                         Error: ErrImageNeverPull
+10m         Normal    Pulled                  pod/analyst                         Container image "bd-g06-s3-client:lab1" already present on machine
+10m         Normal    Created                 pod/analyst                         Created container: client
+10m         Normal    Started                 pod/analyst                         Started container client
+9m31s       Normal    Killing                 pod/analyst                         Stopping container client
+8m59s       Normal    Scheduled               pod/analyst                         Successfully assigned bd-g06/analyst to docker-desktop
+8m58s       Normal    Pulled                  pod/analyst                         Container image "bd-g06-s3-client:lab1" already present on machine
+8m58s       Normal    Created                 pod/analyst                         Created container: client
+8m58s       Normal    Started                 pod/analyst                         Started container client
+7m10s       Normal    Killing                 pod/analyst                         Stopping container client
+6m37s       Normal    Scheduled               pod/analyst                         Successfully assigned bd-g06/analyst to docker-desktop
+6m36s       Normal    Pulled                  pod/analyst                         Container image "bd-g06-s3-client:lab1" already present on machine
+6m36s       Normal    Created                 pod/analyst                         Created container: client
+6m36s       Normal    Started                 pod/analyst                         Started container client
+26m         Normal    Scheduled               pod/blocked                         Successfully assigned bd-g06/blocked to docker-desktop
+21m         Warning   ErrImageNeverPull       pod/blocked                         Container image "bd-g06-s3-client:lab1" is not present with pull policy of Never
+24m         Warning   Failed                  pod/blocked                         Error: ErrImageNeverPull
+17m         Normal    Scheduled               pod/blocked                         Successfully assigned bd-g06/blocked to docker-desktop
+12m         Warning   ErrImageNeverPull       pod/blocked                         Container image "bd-g06-s3-client:lab1" is not present with pull policy of Never
+15m         Warning   Failed                  pod/blocked                         Error: ErrImageNeverPull
+10m         Normal    Pulled                  pod/blocked                         Container image "bd-g06-s3-client:lab1" already present on machine
+10m         Normal    Created                 pod/blocked                         Created container: client
+10m         Normal    Started                 pod/blocked                         Started container client
+9m31s       Normal    Killing                 pod/blocked                         Stopping container client
+8m58s       Normal    Scheduled               pod/blocked                         Successfully assigned bd-g06/blocked to docker-desktop
+8m58s       Normal    Pulled                  pod/blocked                         Container image "bd-g06-s3-client:lab1" already present on machine
+8m58s       Normal    Created                 pod/blocked                         Created container: client
+8m58s       Normal    Started                 pod/blocked                         Started container client
+7m10s       Normal    Killing                 pod/blocked                         Stopping container client
+6m37s       Normal    Scheduled               pod/blocked                         Successfully assigned bd-g06/blocked to docker-desktop
+6m36s       Normal    Pulled                  pod/blocked                         Container image "bd-g06-s3-client:lab1" already present on machine
+6m36s       Normal    Created                 pod/blocked                         Created container: client
+6m36s       Normal    Started                 pod/blocked                         Started container client
+26m         Normal    Scheduled               pod/ingestor                        Successfully assigned bd-g06/ingestor to docker-desktop
+21m         Warning   ErrImageNeverPull       pod/ingestor                        Container image "bd-g06-s3-client:lab1" is not present with pull policy of Never
+24m         Warning   Failed                  pod/ingestor                        Error: ErrImageNeverPull
+17m         Normal    Scheduled               pod/ingestor                        Successfully assigned bd-g06/ingestor to docker-desktop
+12m         Warning   ErrImageNeverPull       pod/ingestor                        Container image "bd-g06-s3-client:lab1" is not present with pull policy of Never
+15m         Warning   Failed                  pod/ingestor                        Error: ErrImageNeverPull
+10m         Normal    Pulled                  pod/ingestor                        Container image "bd-g06-s3-client:lab1" already present on machine
+10m         Normal    Created                 pod/ingestor                        Created container: client
+10m         Normal    Started                 pod/ingestor                        Started container client
+9m31s       Normal    Killing                 pod/ingestor                        Stopping container client
+8m59s       Normal    Scheduled               pod/ingestor                        Successfully assigned bd-g06/ingestor to docker-desktop
+8m58s       Normal    Pulled                  pod/ingestor                        Container image "bd-g06-s3-client:lab1" already present on machine
+8m58s       Normal    Created                 pod/ingestor                        Created container: client
+8m58s       Normal    Started                 pod/ingestor                        Started container client
+7m10s       Normal    Killing                 pod/ingestor                        Stopping container client
+6m37s       Normal    Scheduled               pod/ingestor                        Successfully assigned bd-g06/ingestor to docker-desktop
+6m36s       Normal    Pulled                  pod/ingestor                        Container image "bd-g06-s3-client:lab1" already present on machine
+6m36s       Normal    Created                 pod/ingestor                        Created container: client
+6m36s       Normal    Started                 pod/ingestor                        Started container client
+2d15h       Normal    ExternalProvisioning    persistentvolumeclaim/object-data   Waiting for a volume to be created either by the external provisioner 'docker.io/hostpath' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.
+2d15h       Normal    Provisioning            persistentvolumeclaim/object-data   External provisioner is provisioning volume for claim "bd-g06/object-data"
+2d15h       Normal    ProvisioningSucceeded   persistentvolumeclaim/object-data   Successfully provisioned volume pvc-91e9c651-09e6-4310-a66e-99ae2c3980f6
+2d15h       Normal    Scheduled               pod/objects-564567f7f9-qjwck        Successfully assigned bd-g06/objects-564567f7f9-qjwck to docker-desktop
+2d15h       Normal    Pulling                 pod/objects-564567f7f9-qjwck        Pulling image "chrislusf/seaweedfs:3.66"
+2d15h       Normal    Pulled                  pod/objects-564567f7f9-qjwck        Successfully pulled image "chrislusf/seaweedfs:3.66" in 10.751s (10.751s including waiting). Image size: 43505169 bytes.
+2d15h       Normal    Created                 pod/objects-564567f7f9-qjwck        Created container: store
+2d15h       Normal    Started                 pod/objects-564567f7f9-qjwck        Started container store
+2d15h       Normal    Pulled                  pod/objects-564567f7f9-qjwck        Container image "chrislusf/seaweedfs:3.66" already present on machine
+2d15h       Warning   BackOff                 pod/objects-564567f7f9-qjwck        Back-off restarting failed container store in pod objects-564567f7f9-qjwck_bd-g06(82fffbd1-92d0-4672-b290-5e4f5ee3cbc3)
+2d15h       Normal    SuccessfulCreate        replicaset/objects-564567f7f9       Created pod: objects-564567f7f9-qjwck
+2d15h       Normal    SuccessfulDelete        replicaset/objects-564567f7f9       Deleted pod: objects-564567f7f9-qjwck
+2d15h       Normal    Scheduled               pod/objects-69df446f8c-zhh8x        Successfully assigned bd-g06/objects-69df446f8c-zhh8x to docker-desktop
+2d15h       Normal    Pulling                 pod/objects-69df446f8c-zhh8x        Pulling image "seaweedfs/seaweedfs:3.66"
+2d15h       Warning   Failed                  pod/objects-69df446f8c-zhh8x        Failed to pull image "seaweedfs/seaweedfs:3.66": Error response from daemon: pull access denied for seaweedfs/seaweedfs, repository does not exist or may require 'docker login'
+2d15h       Warning   Failed                  pod/objects-69df446f8c-zhh8x        Error: ErrImagePull
+2d15h       Normal    BackOff                 pod/objects-69df446f8c-zhh8x        Back-off pulling image "seaweedfs/seaweedfs:3.66"
+2d15h       Warning   Failed                  pod/objects-69df446f8c-zhh8x        Error: ImagePullBackOff
+2d15h       Normal    SuccessfulCreate        replicaset/objects-69df446f8c       Created pod: objects-69df446f8c-zhh8x
+2d15h       Normal    SuccessfulDelete        replicaset/objects-69df446f8c       Deleted pod: objects-69df446f8c-zhh8x
+2d15h       Warning   FailedScheduling        pod/objects-7bd96cf4cb-qpbks        0/1 nodes are available: pod has unbound immediate PersistentVolumeClaims. not found
+2d15h       Normal    Scheduled               pod/objects-7bd96cf4cb-qpbks        Successfully assigned bd-g06/objects-7bd96cf4cb-qpbks to docker-desktop
+2d15h       Normal    Pulling                 pod/objects-7bd96cf4cb-qpbks        Pulling image "chrislusf/seaweedfs:3.36"
+2d15h       Normal    Pulled                  pod/objects-7bd96cf4cb-qpbks        Successfully pulled image "chrislusf/seaweedfs:3.36" in 10.575s (10.575s including waiting). Image size: 42153254 bytes.
+2d15h       Normal    Created                 pod/objects-7bd96cf4cb-qpbks        Created container: store
+2d15h       Normal    Started                 pod/objects-7bd96cf4cb-qpbks        Started container store
+2d15h       Normal    Pulled                  pod/objects-7bd96cf4cb-qpbks        Container image "chrislusf/seaweedfs:3.36" already present on machine
+2d15h       Warning   BackOff                 pod/objects-7bd96cf4cb-qpbks        Back-off restarting failed container store in pod objects-7bd96cf4cb-qpbks_bd-g06(abc23c40-3853-4ad9-9896-1e918249f708)
+2d15h       Normal    SuccessfulCreate        replicaset/objects-7bd96cf4cb       Created pod: objects-7bd96cf4cb-qpbks
+2d15h       Normal    SuccessfulDelete        replicaset/objects-7bd96cf4cb       Deleted pod: objects-7bd96cf4cb-qpbks
+2d15h       Normal    Scheduled               pod/objects-8564ff76d8-978gx        Successfully assigned bd-g06/objects-8564ff76d8-978gx to docker-desktop
+2d15h       Normal    Pulled                  pod/objects-8564ff76d8-978gx        Container image "chrislusf/seaweedfs:3.66" already present on machine
+2d15h       Normal    Created                 pod/objects-8564ff76d8-978gx        Created container: store
+2d15h       Normal    Started                 pod/objects-8564ff76d8-978gx        Started container store
+2d15h       Warning   Unhealthy               pod/objects-8564ff76d8-978gx        Readiness probe failed: dial tcp 10.1.0.9:8333: connect: connection refused
+28m         Normal    SandboxChanged          pod/objects-8564ff76d8-978gx        Pod sandbox changed, it will be killed and re-created.
+28m         Normal    Pulled                  pod/objects-8564ff76d8-978gx        Container image "chrislusf/seaweedfs:3.66" already present on machine
+28m         Normal    Created                 pod/objects-8564ff76d8-978gx        Created container: store
+28m         Normal    Started                 pod/objects-8564ff76d8-978gx        Started container store
+28m         Warning   Unhealthy               pod/objects-8564ff76d8-978gx        Readiness probe failed: dial tcp 10.1.0.13:8333: connect: connection refused
+2d15h       Normal    SuccessfulCreate        replicaset/objects-8564ff76d8       Created pod: objects-8564ff76d8-978gx
+2d15h       Normal    ScalingReplicaSet       deployment/objects                  Scaled up replica set objects-7bd96cf4cb from 0 to 1
+2d15h       Normal    ScalingReplicaSet       deployment/objects                  Scaled down replica set objects-7bd96cf4cb from 1 to 0
+2d15h       Normal    ScalingReplicaSet       deployment/objects                  Scaled up replica set objects-69df446f8c from 0 to 1
+2d15h       Normal    ScalingReplicaSet       deployment/objects                  Scaled down replica set objects-69df446f8c from 1 to 0
+2d15h       Normal    ScalingReplicaSet       deployment/objects                  Scaled up replica set objects-564567f7f9 from 0 to 1
+2d15h       Normal    ScalingReplicaSet       deployment/objects                  Scaled down replica set objects-564567f7f9 from 1 to 0
+2d15h       Normal    ScalingReplicaSet       deployment/objects                  Scaled up replica set objects-8564ff76d8 from 0 to 1
+26m         Normal    Scheduled               pod/owner                           Successfully assigned bd-g06/owner to docker-desktop
+21m         Warning   ErrImageNeverPull       pod/owner                           Container image "bd-g06-s3-client:lab1" is not present with pull policy of Never
+24m         Warning   Failed                  pod/owner                           Error: ErrImageNeverPull
+17m         Normal    Scheduled               pod/owner                           Successfully assigned bd-g06/owner to docker-desktop
+12m         Warning   ErrImageNeverPull       pod/owner                           Container image "bd-g06-s3-client:lab1" is not present with pull policy of Never
+15m         Warning   Failed                  pod/owner                           Error: ErrImageNeverPull
+10m         Normal    Pulled                  pod/owner                           Container image "bd-g06-s3-client:lab1" already present on machine
+10m         Normal    Created                 pod/owner                           Created container: client
+10m         Normal    Started                 pod/owner                           Started container client
+9m31s       Normal    Killing                 pod/owner                           Stopping container client
+8m59s       Normal    Scheduled               pod/owner                           Successfully assigned bd-g06/owner to docker-desktop
+8m58s       Normal    Pulled                  pod/owner                           Container image "bd-g06-s3-client:lab1" already present on machine
+8m58s       Normal    Created                 pod/owner                           Created container: client
+8m58s       Normal    Started                 pod/owner                           Started container client
+7m10s       Normal    Killing                 pod/owner                           Stopping container client
+6m37s       Normal    Scheduled               pod/owner                           Successfully assigned bd-g06/owner to docker-desktop
+6m36s       Normal    Pulled                  pod/owner                           Container image "bd-g06-s3-client:lab1" already present on machine
+6m36s       Normal    Created                 pod/owner                           Created container: client
+6m36s       Normal    Started                 pod/owner                           Started container client

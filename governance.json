@@ -1,0 +1,14 @@
+{
+  "bucket": "research-raw",
+  "owner": "24022488",
+  "steward": "24022488",
+  "classification": "synthetic-restricted",
+  "purpose": "lab ingestion",
+  "retention": "assessment completion + 7 days",
+  "retention_enforced": false,
+  "cleanup_owner": "instructor",
+  "access_policy": "bucket-scoped roles",
+  "verified_tests": ["S01", "S02", "S03", "S10", "S11"],
+  "approved_by": "Phạm Nguyễn Xuân Tùng",
+  "policy_revision": "git-commit-id"
+}

@@ -1,0 +1,1 @@
+Error from server (Forbidden): pods "objects-8564ff76d8-978gx" is forbidden: User "system:serviceaccount:bd-g06:observer" cannot delete resource "pods" in API group "" in the namespace "bd-g06"

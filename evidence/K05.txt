@@ -1,0 +1,1 @@
+Error from server (Forbidden): error when creating "manifests/positive.yaml": pods is forbidden: User "system:serviceaccount:bd-g06:observer" cannot create resource "pods" in API group "" in the namespace "bd-g06"

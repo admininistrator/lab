@@ -1,0 +1,6 @@
+NAME                       READY   STATUS    RESTARTS      AGE
+analyst                    1/1     Running   0             6m37s
+blocked                    1/1     Running   0             6m37s
+ingestor                   1/1     Running   0             6m37s
+objects-8564ff76d8-978gx   1/1     Running   1 (29m ago)   2d15h
+owner                      1/1     Running   0             6m37s
